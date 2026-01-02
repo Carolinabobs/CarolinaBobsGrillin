@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carolina Bob's Original: Premium Hospital Dining Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* CAROLINA BOB'S BRAND PALETTE */
+        :root {
+            --cb-red: #ce2029;
+            --cb-gold: #f9b233;
+            --cb-offwhite: #fdfbf7;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cb-offwhite);
+        }
+        .brand-red { color: var(--cb-red); }
+        .bg-brand-red { background-color: var(--cb-red); }
+        .brand-gold { color: var(--cb-gold); }
+        .bg-brand-gold { background-color: var(--cb-gold); }
+        
+        .section-header {
+            border-left: 6px solid var(--cb-red);
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            background: white;
+        }
+        .card-shadow:hover {
+            transform: translateY(-5px);
+            border-color: var(--cb-gold);
+        }
+        .cta-pulse {
+            animation: pulse-gold 2s infinite;
+        }
+        @keyframes pulse-gold {
+            0% { box-shadow: 0 0 0 0 rgba(249, 178, 51, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(249, 178, 51, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(249, 178, 51, 0); }
+        }
+    </style>
+</head>
+<body class="antialiased text-slate-800">
+
+    <div class="max-w-6xl mx-auto py-12 px-4">
+
+        <header class="text-center bg-[#ce2029] text-white p-12 rounded-2xl mb-16 shadow-2xl border-b-8 border-[#f9b233]">
+            <div class="mb-6">
+                <img src="https://static.wixstatic.com/media/5c44ca_778f31b8224941baae26fe94340221d6~mv2.png" 
+                     alt="Carolina Bobs Logo" 
+                     class="w-44 h-44 mx-auto rounded-full border-4 border-white bg-white shadow-lg">
+            </div>
+            <h1 class="text-5xl md:text-6xl font-black tracking-tight mb-4 uppercase">
+                Elevate Your <span class="text-[#f9b233]">Retail Dining</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto text-white/90">
+                The <span class="text-[#f9b233] font-bold">Original Recipe</span> Blend: Premium Southern flavor that keeps staff and visitors on-site and satisfied.
+            </p>
+            <div class="mt-10">
+                <a href="https://www.carolinabobs.com/?fbclid=IwY2xjawPE2ABleHRuA2FlbQIxMABicmlkETFmUGNLbGVFdGFiQVB1S0E3c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHn9qZetf63vuEuzR99nrs28K1Rru3RlZ9w8CGwbm2w53vR6n7kvVkeu8MZMV_aem_Hvpkw6iDSwwo1bpXACKsZw" class="inline-block bg-[#f9b233] text-black font-black py-5 px-12 rounded-full shadow-xl hover:bg-white transition-colors cta-pulse uppercase tracking-tight text-xl">
+                    Request Hospital Trial Kit
+                </a>
+            </div>
+        </header>
+
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Built for High-Volume Excellence</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-xl card-shadow border border-gray-100">
+                    <div class="w-14 h-14 bg-red-50 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-hand-holding-usd text-2xl text-[#ce2029]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Maximize Revenue</h3>
+                    <p class="text-gray-600">Give doctors and staff a reason to skip the local drive-thru. Bold, restaurant-quality flavor increases "capture rates" for your cafeteria.</p>
+                </div>
+                <div class="p-8 rounded-xl card-shadow border border-gray-100">
+                    <div class="w-14 h-14 bg-amber-50 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-user-clock text-2xl text-amber-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Labor-Saving Simplicity</h3>
+                    <p class="text-gray-600">One blend replaces complex spice racks. Reduce prep time and ensure flavor consistency regardless of who is behind the grill.</p>
+                </div>
+                <div class="p-8 rounded-xl card-shadow border border-gray-100">
+                    <div class="w-14 h-14 bg-orange-50 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-utensils text-2xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">The "Original" Standard</h3>
+                    <p class="text-gray-600">Our signature blend with salt. Perfectly balanced for grilled meats, roasted veggies, and the best fried chicken in the county.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-white p-10 rounded-2xl shadow-sm border border-gray-100">
+            <h2 class="text-4xl font-bold text-gray-900 section-header">One Solution. Every Station.</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="mb-8">
+                        <h4 class="text-2xl font-bold text-[#ce2029] mb-2 underline decoration-[#f9b233] underline-offset-4">The Short-Order Grill</h4>
+                        <p class="text-gray-700">Transform standard burgers, breakfast hash, and grilled chicken into signature menu items that staff will crave.</p>
+                    </div>
+                    <div class="mb-8">
+                        <h4 class="text-2xl font-bold text-[#ce2029] mb-2 underline decoration-[#f9b233] underline-offset-4">The Main Line & Catering</h4>
+                        <p class="text-gray-700">Perfect for large-batch roasted potatoes, steam-table vegetables, and bulk proteins like pork loin or brisket.</p>
+                    </div>
+                    <div class="p-6 bg-orange-50 rounded-lg border-l-4 border-[#f9b233]">
+                        <p class="italic text-slate-700 font-medium">"The consistency we get with Carolina Bob's Original is unmatched. It’s the easiest way to upgrade our entire menu overnight."</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md bg-slate-200 flex items-center justify-center border-4 border-white">
+                    <img src="https://static.wixstatic.com/media/5c44ca_74a9f29107144e318182701d52840428~mv2.jpg" alt="Original Recipe Application" class="object-cover h-full w-full">
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-[#ce2029] text-white p-12 rounded-3xl text-center border-t-8 border-[#f9b233]">
+            <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Hospital Dining?</h2>
+            <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+                Join the growing number of facilities choosing <strong class="text-white">Carolina Bob's</strong> for flavor, efficiency, and satisfaction.
+            </p>
+            
+            <div class="mb-12">
+                <a href="https://www.carolinabobs.com" class="inline-block bg-[#f9b233] text-black font-black py-4 px-10 rounded-full hover:bg-white transition-all uppercase shadow-lg">
+                    Contact Robert for Bulk Pricing
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4 max-w-xl mx-auto text-left border-t border-white/20 pt-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-[#f9b233]">Robert Hoefer</h3>
+                    <p class="text-white/70 uppercase tracking-widest text-sm font-bold">President / Owner</p>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-lg"><strong>Email:</strong> <a href="mailto:Robert@CarolinaBobs.com" class="hover:text-[#f9b233]">Robert@CarolinaBobs.com</a></p>
+                    <p class="text-lg"><strong>Phone:</strong> 864.325.8774</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
